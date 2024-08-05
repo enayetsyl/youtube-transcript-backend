@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: youtube-transcript-generator
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: PORT
+        value: "3000"
